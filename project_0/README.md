@@ -6,10 +6,10 @@
 
 ## Оглавление
 
-1. Описание проекта
-2. Какой кейс решаем?
-3. Этапы работы над проектом
-4. Результат 
+1. Описание проекта (https://github.com/KunaevVV09/home-work/blob/main/project_0/README.md#описание-проекта)
+2. Какой кейс решаем? (https://github.com/KunaevVV09/home-work/blob/main/project_0/README.md#какой-кейс-решаем)
+3. Этапы работы над проектом (https://github.com/KunaevVV09/home-work/blob/main/project_0/README.md#этапы-работы-над-проектом)
+4. Результат (https://github.com/KunaevVV09/home-work/blob/main/project_0/README.md#результат)
 
 
 ### Описание проекта
@@ -40,7 +40,7 @@
 
 ### Результат
 
-По итогу наш код угадывает число в среднем за 10 попыток.
+По итогу наш код угадывает число в среднем за 5 попыток.
 
 
 

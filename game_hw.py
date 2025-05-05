@@ -53,5 +53,6 @@ def average_number(random_predict) -> int:
     
     return score
 
-average_number(random_predict) # запускаем
+if __name__ == '__main__':
+    average_number(random_predict) # запускаем
                 

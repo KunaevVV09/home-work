@@ -4,8 +4,8 @@
 import numpy as np
 
 def random_predict(number: int = 1) -> int:  
-    """Сначала устанавливаем любое random число, а потом уменьшаем
-    или увеличиваем его в зависимости от того, больше оно или меньше нужного.
+    """Сначала устанавливаем любое загаданного числа, потом используя бинарный способ 
+    находим загаданное число.
        Функция принимает загаданное число и возвращает число попыток
 
     Args:
@@ -16,6 +16,7 @@ def random_predict(number: int = 1) -> int:
     """
     
     count = 0
+    # задаем диапозон поиска загаданного числа 
     low = 1
     high = 100
     
@@ -43,7 +44,7 @@ def average_number(random_predict) -> int:
     Returns:
         int: среднее количество попыток
     """
-    # 
+    
     count_ls = [] 
     np.random.seed(1) # фиксируем сид для воспроизводимости
     random_array = np.random.randint(1,101, size=(1000)) # загадали список чисел
@@ -53,7 +54,7 @@ def average_number(random_predict) -> int:
     
     score = int(np.mean(count_ls)) # вычисляем среднее значение
     print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
-    print(count_ls.count(0))
+    
     return score
 
 if __name__ == '__main__':

@@ -16,18 +16,22 @@ def random_predict(number: int = 1) -> int:
     """
     
     count = 0
-    predict = np.random.randint(1,101) # устанавливаем предпологаемое число
+    low = 1
+    high = 100
     
-    while number != predict: # запускаем цикл для определения загаданного числа
+    while True:
+        count += 1 
+        predict = (low + high) // 2
         
-        count += 1
+        if number == predict:
+            break
         
-        if number > predict:
-            predict += 5
-            
-        else:
-            predict -= 4
-            
+        elif number > predict:
+            low = predict + 1
+        
+        elif number < predict:
+            high = predict - 1
+                    
     return count
 
 def average_number(random_predict) -> int: 
@@ -48,9 +52,8 @@ def average_number(random_predict) -> int:
         count_ls.append(random_predict(number))
     
     score = int(np.mean(count_ls)) # вычисляем среднее значение
-    
     print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
-    
+    print(count_ls.count(0))
     return score
 
 if __name__ == '__main__':

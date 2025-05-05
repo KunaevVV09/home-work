@@ -3,5 +3,5 @@ From the [Skillfactory Data Science course](https:/skillfactory.ru/data-scientis
 
 ## Проекты
 
-* [Проект 0. Игра: Угадай число](https://github.com/KunaevVV09/home-work/blob/main/game_hw.py)
+* [Проект 0. Игра: Угадай число](https://github.com/KunaevVV09/home-work/tree/main/project_0)
 
